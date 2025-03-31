@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
+{/* 
       <div className="absolute bottom-0 w-full flex justify-center items-center">
         {isWebGLSupported ? (
           <ComputersCanvas />
@@ -44,7 +44,9 @@ const Hero = () => {
             3D content not supported on this device.
           </div>
         )}
-      </div>
+      </div> */}
+          <ComputersCanvas />
+
 
       <div className="absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center">
         <a href="#about">
