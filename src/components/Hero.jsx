@@ -36,11 +36,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full flex justify-center items-center">
+      <div className="absolute bottom-20 w-full h-[30vh] flex justify-center items-center">
         {isWebGLSupported ? (
           <ComputersCanvas />
         ) : (
-          <div className="text-black center">
+          <div className="text-slate-950 text-[16px] font-semibold text-center">
             3D content not supported on this device.
           </div>
         )}
