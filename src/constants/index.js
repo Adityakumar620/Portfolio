@@ -4,7 +4,6 @@ import {
   creator,
   web,
   javascript,
-  // typescript,
   html,
   css,
   reactjs,
