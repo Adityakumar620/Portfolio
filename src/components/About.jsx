@@ -77,6 +77,14 @@ const ServiceCard = ({ index, title, icon }) => (
     style={{ perspective: 1000 }} // 3D depth
     className="xs:w-[250px] w-full"
   >
+{/* // const ServiceCard = ({ index, title, icon }) => (
+//   <motion.div
+//     whileHover={{ rotateX: 20, rotateY: 20, scale: 1.05 }}
+//     whileTap={{ rotateX: 10, rotateY: 10, scale: 1.02 }}
+//     transition={{ type: "spring", stiffness: 300, damping: 20 }}
+//     style={{ perspective: 1200 }}
+//     className="xs:w-[200px] w-[90%] max-w-[250px] cursor-pointer" // Adjusted for smaller screens
+//   > */}
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
