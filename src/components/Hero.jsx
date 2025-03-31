@@ -40,7 +40,7 @@ const Hero = () => {
         {isWebGLSupported ? (
           <ComputersCanvas />
         ) : (
-          <div className="text-white text-center">
+          <div className="text-black center">
             3D content not supported on this device.
           </div>
         )}
