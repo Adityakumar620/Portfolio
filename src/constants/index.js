@@ -173,27 +173,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "You’re a fantastic problem-solver—great work making tough issues look easy! It’s amazing how quickly you figure things out, and your solutions always hit the mark. Keep up the awesome work!",
+    name: "Anurag Verma",
+    // designation: "CFO",
+    // company: "Acme Co",
+    image:"https://i.ibb.co/gLKBTfMb/1678343787212.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Your skills are awesome; you fix things fast and smart every time! I’m impressed by how you handle challenges with such confidence. You really make a big difference!",
+    name: "Abhishek Yadav",
+    // designation: "COO",
+    // company: "DEF Corp",
+    image:"https://i.ibb.co/W40b4Kb8/abhi3.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Love how you tackle problems—simple, effective, and always spot-on! You’ve got a real talent for keeping things smooth and steady. It’s a pleasure to see you shine!",
+    name: "Rohit Sharma",
+    // designation: "CTO",
+    // company: "456 Enterprises",
+    image: "https://i.ibb.co/h1JnjFgJ/Screenshot-20241011-164429.jpg",
   },
 ];
 
