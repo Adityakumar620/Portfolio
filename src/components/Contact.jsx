@@ -14,6 +14,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    mobile: "",
     message: "",
   });
 
@@ -39,6 +40,7 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
+          from_contact: form.mobile,
           to_name: "Aditya Kumar",
           from_email: form.email,
           to_email: "arajsg82@gmail.com",
@@ -54,6 +56,7 @@ const Contact = () => {
           setForm({
             name: "",
             email: "",
+            mobile: "",
             message: "",
           });
         },
@@ -100,10 +103,23 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
+          <label className='flex flex-col'>
+            <span className='text-white font-medium mb-4'>Contact Number</span>
+            <input
+              type='number'
+              name='mobile'
+              value={form.mobile}
+              onChange={handleChange}
+              placeholder="What's your Contact number"
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium mobile'
+            />
+          </label>
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
@@ -112,7 +128,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium mobile'
             />
           </label>
 

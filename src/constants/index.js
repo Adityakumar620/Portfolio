@@ -20,7 +20,7 @@ import {
   // shopify,
   onyourown,
   pulsevault,
-  threejs,
+  // threejs,
   simonsays,
   dstooling,
   movidu,
@@ -98,13 +98,14 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
+  // {
+  //    name: "Three JS",
+  //    icon: threejs,
+  // },
+ 
   // {
   //   name: "figma",
   //   icon: figma,
@@ -173,7 +174,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "You’re a fantastic problem-solver—great work making tough issues look easy! It’s amazing how quickly you figure things out, and your solutions always hit the mark. Keep up the awesome work!",
+      "You’re a fantastic problem-solver—great work making tough issues look easy! It’s amazing how quickly you figure things out, and your solutions always hit the mark.",
     name: "Anurag Verma",
     // designation: "CFO",
     // company: "Acme Co",

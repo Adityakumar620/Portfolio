@@ -33,7 +33,7 @@ const CanvasLoader = () => {
           marginTop: 20, // Reduced margin for mobile
         }}
       >
-        {progress.toFixed(0)}% {/* Simplified to whole numbers */}
+        {progress.toFixed(2)}% {/* Simplified to whole numbers */}
       </p>
     </Html>
   );
