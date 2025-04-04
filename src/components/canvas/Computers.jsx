@@ -201,7 +201,7 @@ const ComputersCanvas = () => {
   if (isMobile) {
     return (
       <img
-        src="src\assets\computer.png"
+        src="https://i.ibb.co/MkRb8rbx/computer.png"
         alt="Computer Fallback"
         style={{
           width: "100%",
