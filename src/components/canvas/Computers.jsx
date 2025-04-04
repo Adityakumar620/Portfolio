@@ -1,5 +1,3 @@
-
-
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -50,7 +48,7 @@ const ComputersCanvas = () => {
       <img
         src="https://i.ibb.co/MkRb8rbx/computer.png"
         alt="Computer Fallback"
-        className="w-full h-auto max-h-[300px] object-contain"
+        className="w-full h-auto max-h-[300px] object-contain mx-auto"
       />
     );
   }
@@ -62,7 +60,7 @@ const ComputersCanvas = () => {
       dpr={[1, 1.5]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
-      className="w-full h-full"
+      className="w-full h-full max-h-[70vh]"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -78,6 +76,8 @@ const ComputersCanvas = () => {
 };
 
 export default ComputersCanvas;
+
+
 
 
 
