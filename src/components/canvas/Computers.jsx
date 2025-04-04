@@ -5,8 +5,6 @@ import CanvasLoader from "../Loader";
 
 const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.glb", true, (loader) => {
-    loader.manager.onStart = () => console.log("GLTF loading started");
-    loader.manager.onLoad = () => console.log("GLTF loaded successfully");
     loader.manager.onError = (url) => console.error(`GLTF load failed: ${url}`);
   });
 
@@ -24,8 +22,8 @@ const Computers = () => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
+        scale={2.5} // Increased from 0.75 to 1.2 for laptop
+        position={[0, -7.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -33,17 +31,17 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-    setIsMobile(mediaQuery.matches);
-    const handleMediaQueryChange = (event) => setIsMobile(event.matches);
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobileOrTablet(mediaQuery.matches);
+    const handleMediaQueryChange = (event) => setIsMobileOrTablet(event.matches);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
     return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
 
-  if (isMobile) {
+  if (isMobileOrTablet) {
     return (
       <img
         src="https://i.ibb.co/MkRb8rbx/computer.png"
@@ -60,7 +58,7 @@ const ComputersCanvas = () => {
       dpr={[1, 1.5]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
-      className="w-full h-full max-h-[70vh]"
+      className="w-full h-auto max-h-[70vh]"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -76,7 +74,6 @@ const ComputersCanvas = () => {
 };
 
 export default ComputersCanvas;
-
 
 
 
